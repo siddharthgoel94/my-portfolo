@@ -70,6 +70,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     font-size: 1.5rem;
+    padding:1rem;
 }
 .skill{
     width:50%;
@@ -92,9 +93,24 @@
     // width:75%;
     height:100%;
     // border-radius: 2rem;
+
+
+    animation-name: animateBar;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: .8s;
+
+}
+@keyframes animateBar {
+    0% {transform: translateX(-100%);}
+    100% {transform: translateX(0);}
 }
 .techStack{
     font-size:1.5rem;
+}
+.project{
+    border-left: 1px solid black;
+    padding-left: 3rem;
 }
 @media screen and (max-width:530px){
     .formField>input{
